@@ -11,7 +11,7 @@ export default function ListUsername(props) {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-    const data = await fetch('http://localhost:3000/api/read')
+    const data = await fetch('https://username-list-serverless.vercel.app')
         .then((res) => {
             return res.json()
         })
