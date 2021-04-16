@@ -2,7 +2,10 @@ import { Container } from '../styles/Pages/listusernames'
 import { GetServerSideProps } from 'next'
 
 interface listUsernameProps {
-    usernames: Array<object>;
+    usernames: Array<listUsernameObjectProps>;
+}
+interface listUsernameObjectProps {
+    username: string,
 }
 
 export default function ListUsername(props: listUsernameProps) {
