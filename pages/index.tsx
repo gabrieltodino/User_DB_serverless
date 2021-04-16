@@ -10,7 +10,7 @@ export default function Home() {
       <Input/>
 
       <Link href="/listusernames">
-        View list
+        <p>View list</p>
       </Link>
     </Container>
   )
